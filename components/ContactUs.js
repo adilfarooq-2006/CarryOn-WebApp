@@ -9,7 +9,7 @@ const ContactUs = () => {
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm('service_oz576kr', 'template_wcte11t', ref.current, '0HopeloPbd8EsqvwX')
+        emailjs.sendForm(process.env.SERVICE_KEY, process.env.TEMPLATE_KEY, ref.current, process.env.EMAIL_KEY)
             .then((result) => {
                 alert('Message sent successfully!');
                 ref.current.reset();
