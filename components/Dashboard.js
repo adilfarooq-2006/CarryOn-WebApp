@@ -37,9 +37,9 @@ const Dashboard = () => {
     let res = await updateProfile(form, session.user.name);
     if (res.success) {
       alert("Profile updated successfully!");
-      await getData(); // ✅ Refresh form with updated data
+      await getData(); // Refresh form with updated data
     } else if (res.error) {
-      alert(res.error); // show error if any
+      alert(res.error);
     }
   }
 
