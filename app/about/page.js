@@ -16,10 +16,10 @@ const About = () => {
                             What is CarryOn?
                         </h2>
                         <p className='text-2xl  text-center p-4'>
-                            CarryOn lets fans, followers, and supporters show love to their favorite creators through direct support—whether it’s a one-time token of appreciation or ongoing monthly contributions.
+                            CarryOn lets fans, followers and supporters show love to their favorite creators through direct support—whether its a one-time token of appreciation or ongoing monthly contributions.
                         </p>
                         <p className='text-2xl  text-center p-4'>
-                            Artists, writers, developers, podcasters, educators, and all types of creatives can thrive here without relying on algorithms or ads. We believe that creating great content should be rewarding—not exhausting. That’s why CarryOn is simple, flexible, and creator-first.
+                            Artists, writers, developers, podcasters, educators, and all types of creatives can thrive here without relying on algorithms or ads. We believe that creating great content should be rewarding—not exhausting. Thats why CarryOn is simple, flexible, and creator-first.
                         </p>
                     </div>
                     <div className='flex flex-col justify-center mt-10 items-center w-full max-w-5xl mx-auto p-10 rounded-2xl bg-black mb-10'>

@@ -6,8 +6,8 @@ import { useRouter } from 'next/navigation'
 
 const Login = () => {
   const { data: session } = useSession()
+  const router = useRouter()
   if (session) {
-    const router = useRouter()
     router.push("/dashboard")
   }
   useEffect(() => {

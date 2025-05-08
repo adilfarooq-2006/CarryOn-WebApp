@@ -38,7 +38,7 @@ export default function Home() {
               alt="Code With Harry"
             />
 
-              //Bottom overlay transition
+              {/* Bottom overlay transition */}
             <div className="absolute bottom-0 w-full bg-[#4E36E8] text-white p-4 rounded-t-xl z-10 
                  opacity-0 translate-y-10 group-hover:translate-y-0 group-hover:opacity-100 
                  transition-all duration-500 ease-in-out">
@@ -57,7 +57,7 @@ export default function Home() {
               src="/icons/chirsdo.jpg"
               alt="Code With Harry"
             />
-              //Bottom overlay transition
+              {/* Bottom overlay transition */}
             <div className="absolute bottom-0 w-full bg-[#4E36E8] text-white p-4 rounded-t-xl z-10 
                  opacity-0 translate-y-10 group-hover:translate-y-0 group-hover:opacity-100 
                  transition-all duration-500 ease-in-out">
@@ -77,13 +77,13 @@ export default function Home() {
               alt="Code With Harry"
             />
 
-              //Bottom overlay transition
+              {/* Bottom overlay transition */}
             <div className="absolute bottom-0 w-full bg-[#4E36E8] text-white p-4 rounded-t-xl z-10 
                  opacity-0 translate-y-10 group-hover:translate-y-0 group-hover:opacity-100 
                  transition-all duration-500 ease-in-out">
               <h3 className="font-semibold text-lg">Alex Hormozi</h3>
-              <p className="text-sm mt-1">
-                Alex Hormozi is an entrepreneur, author, and investor best known for his book "$100M Offers".
+              <p className="text-sm mt-1">"
+                Alex Hormozi is an entrepreneur, author, and investor best known for his book $100M Offers.
               </p>
               <div className="absolute top-5 right-2 w-6 h-6 bg-teal-300 rounded-full" />
             </div>
@@ -96,7 +96,7 @@ export default function Home() {
               alt="Code With Harry"
             />
 
-              //Bottom overlay transition
+              {/* Bottom overlay transition */}
             <div className="absolute bottom-0 w-full bg-[#4E36E8] text-white p-4 rounded-t-xl z-10 
                  opacity-0 translate-y-10 group-hover:translate-y-0 group-hover:opacity-100 
                  transition-all duration-500 ease-in-out">
@@ -156,7 +156,7 @@ export default function Home() {
                     strokeWidth="1.5"
                   />
                 </svg>
-                <p className="text-2xl">We don't call them "customers" or transactions. They are your supporters.</p>
+                <p className="text-2xl">We don't call them customers or transactions. They are your supporters.</p>
               </div>
             </div>
 

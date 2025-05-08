@@ -1,5 +1,6 @@
 "use client"
 import React, { useState, useEffect } from 'react'
+import Image from 'next/image'
 import { fetchuser, fetchpayments } from '@/actions/useractions'
 
 
@@ -112,11 +113,29 @@ const PaymentPage = ({ username }) => {
   return (
 
     <>
+    
       <div className='bg-black min-h-screen text-white'>
+        
         <div className="banner relative w-full  bg-[#4E36E8] hover:bg-[#4536e8] transition-colors delay-100">
-          <img className='w-full object-cover h-100' src={currentUser.coverimg} alt="" />
+          {currentUser.coverimg ? (
+            <Image className="w-full object-cover h-100"
+              src={currentUser.coverimg}
+              alt="User cover image"
+              width={1000}
+              height={400}
+            />
+          ) : <div className='w-full object-cover h-100 bg-red-500 '></div>}
           <div className="logo">
-            <img className='w-25 h-25 absolute -bottom-10 bg-white rounded-lg  left-[47%]' src={currentUser.profileimg} alt="" />
+            {currentUser.profileimg ? (
+              <Image
+                className=" absolute -bottom-10 bg-white rounded-lg left-[47%]"
+                src={currentUser.profileimg}
+                alt="User profile image"
+                width={100}
+                height={100}
+              />
+            ): <div className=' w-25 h-25 absolute -bottom-10 bg-blue-500 rounded-lg left-[47%]'></div>}
+            
           </div>
         </div>
         <div className="username flex flex-col justify-center items-center mt-13">
@@ -128,13 +147,13 @@ const PaymentPage = ({ username }) => {
           <div className="first w-1/2 h-120 bg-neutral-800 text-white  rounded-xl p-5">
             <h1 className='text-xl font-bold'>Your Suppoters</h1>
             <ul className='overflow-y-auto max-h-95'>
-                  {supporters.length === 0 && <li className='mt-2'>No supporters yet</li>}
-                  {supporters.map((supporter, index) => (
-                      <li key={index} className="flex items-center gap-2 my-2">
-                        <img className="w-7 h-7" src="/icons/profile.png" alt="" />
-                        <span>{supporter.name} donated ${supporter.amount} with message "{supporter.message}"</span>
-                      </li>
-                    ))}
+              {supporters.length === 0 && <li className='mt-2'>No supporters yet</li>}
+              {supporters.map((supporter, index) => (
+                <li key={index} className="flex items-center gap-2 my-2">
+                  <Image className="w-7 h-7" width={28} height={28} src="/icons/profile.png" alt="" />
+                  <span>{supporter.name} donated ${supporter.amount} with message "{supporter.message}"</span>
+                </li>
+              ))}
             </ul>
 
 

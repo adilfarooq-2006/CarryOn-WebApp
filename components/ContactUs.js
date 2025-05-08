@@ -1,14 +1,14 @@
 "use client"
 import React from 'react'
 import { useRef } from 'react'
-import emailjs from 'emailjs-com'
+import emailjs from '@emailjs/browser';
 
 const ContactUs = () => {
     const ref = useRef();
 
     const sendEmail = (e) => {
         e.preventDefault();
-
+    
         emailjs.sendForm(process.env.SERVICE_KEY, process.env.TEMPLATE_KEY, ref.current, process.env.EMAIL_KEY)
             .then((result) => {
                 alert('Message sent successfully!');
