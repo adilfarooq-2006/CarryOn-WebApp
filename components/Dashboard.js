@@ -3,7 +3,6 @@ import React from 'react'
 import { useSession, signIn, signOut } from "next-auth/react"
 import { useEffect, useState } from 'react'
 import { useRouter } from 'next/navigation'
-import { Andada_Pro } from 'next/font/google'
 import { fetchuser, updateProfile } from '@/actions/useractions'
 
 
@@ -12,6 +11,12 @@ const Dashboard = () => {
   const [form, setform] = useState({})
   const router = useRouter()
 
+  const getData = async () => {
+    let u = await fetchuser(session.user.name)
+    if (u) {
+      setform(u);
+    }
+  }
 
   useEffect(() => {
     console.log(session)
@@ -22,14 +27,9 @@ const Dashboard = () => {
     else {
       getData()
     }
-  }, [])
+  }, [session, router])
 
-  const getData = async () => {
-    let u = await fetchuser(session.user.name)
-    if (u) {
-      setform(u);
-    }
-  }
+  
 
 
   const handleSubmit = async (e) => {

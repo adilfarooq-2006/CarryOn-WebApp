@@ -151,7 +151,7 @@ const PaymentPage = ({ username }) => {
               {supporters.map((supporter, index) => (
                 <li key={index} className="flex items-center gap-2 my-2">
                   <Image className="w-7 h-7" width={28} height={28} src="/icons/profile.png" alt="" />
-                  <span>{supporter.name} donated ${supporter.amount} with message "{supporter.message}"</span>
+                  <span>{supporter.name} donated ${supporter.amount} with message {supporter.message}</span>
                 </li>
               ))}
             </ul>

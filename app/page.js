@@ -82,7 +82,7 @@ export default function Home() {
                  opacity-0 translate-y-10 group-hover:translate-y-0 group-hover:opacity-100 
                  transition-all duration-500 ease-in-out">
               <h3 className="font-semibold text-lg">Alex Hormozi</h3>
-              <p className="text-sm mt-1">"
+              <p className="text-sm mt-1">
                 Alex Hormozi is an entrepreneur, author, and investor best known for his book $100M Offers.
               </p>
               <div className="absolute top-5 right-2 w-6 h-6 bg-teal-300 rounded-full" />
@@ -156,7 +156,7 @@ export default function Home() {
                     strokeWidth="1.5"
                   />
                 </svg>
-                <p className="text-2xl">We don't call them customers or transactions. They are your supporters.</p>
+                <p className="text-2xl">We donot call them customers or transactions. They are your supporters.</p>
               </div>
             </div>
 
