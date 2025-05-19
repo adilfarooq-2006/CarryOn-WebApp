@@ -42,3 +42,8 @@ const About = () => {
 }
 
 export default About
+
+
+export const metadata = {
+    title: "CarryOn - About Us",
+  }

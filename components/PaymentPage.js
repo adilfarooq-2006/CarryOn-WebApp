@@ -116,7 +116,7 @@ const PaymentPage = ({ username }) => {
     
       <div className='bg-black min-h-screen text-white'>
         
-        <div className="banner relative w-full  bg-[#4E36E8] hover:bg-[#4536e8] transition-colors delay-100">
+        <div className="banner flex justify-center items-center relative w-full  bg-[#4E36E8] hover:bg-[#4536e8] transition-colors delay-100">
           {currentUser.coverimg ? (
             <Image className="w-full object-cover h-100"
               src={currentUser.coverimg}
@@ -124,11 +124,11 @@ const PaymentPage = ({ username }) => {
               width={1000}
               height={400}
             />
-          ) : <div className='w-full object-cover h-100 bg-red-500 '></div>}
+          ) : <div className='w-full  object-cover h-100 bg-red-500 '></div>}
           <div className="logo">
             {currentUser.profileimg ? (
               <Image
-                className=" absolute -bottom-10 bg-white rounded-lg left-[47%]"
+                className=" absolute -bottom-10 bg-white rounded-lg md:left-[47%] left-[40%]"
                 src={currentUser.profileimg}
                 alt="User profile image"
                 width={100}
@@ -142,9 +142,9 @@ const PaymentPage = ({ username }) => {
           <h1 className='text-2xl font-bold'>{currentUser.username}</h1>
           <p>{currentUser.dec}</p>
         </div>
-        <div className="boxes flex gap-5 container w-full max-w-7xl mx-auto py-10">
+        <div className="boxes flex md:flex-row flex-col-reverse gap-5 container w-full md:max-w-7xl md:mx-auto py-10">
 
-          <div className="first w-1/2 h-120 bg-neutral-800 text-white  rounded-xl p-5">
+          <div className="first w-full md:w-1/2 h-120 bg-neutral-800 text-white  rounded-xl p-5">
             <h1 className='text-xl font-bold'>Your Suppoters</h1>
             <ul className='overflow-y-auto max-h-95'>
               {supporters.length === 0 && <li className='mt-2'>No supporters yet</li>}
@@ -158,7 +158,7 @@ const PaymentPage = ({ username }) => {
 
 
           </div>
-          <div className="second w-1/2 h-120 bg-neutral-800 text-white  rounded-xl p-5">
+          <div className="second w-full md:w-1/2 h-120 bg-neutral-800 text-white  rounded-xl p-5">
             <h1 className='text-xl font-bold'>Support the creator</h1>
             {/* show inputs so use can donate to the creator */}
             <div className="inputs flex flex-col gap-2 mt-5">

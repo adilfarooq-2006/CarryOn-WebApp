@@ -11,3 +11,7 @@ const Username = async ({params}) => {
 }
 
 export default Username
+
+export const metadata = {
+    title: "CarryOn - Creator Page",
+  }

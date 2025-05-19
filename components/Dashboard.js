@@ -52,8 +52,8 @@ const Dashboard = () => {
     <>
       <div className='bg-black text-white min-h-screen'>
         <div className='flex flex-col justify-center items-center'>
-          <h1 className='text-3xl font-bold pt-10'>Welcome to your Dashboard</h1>
-          <div className="user-info flex flex-col gap-2 mt-5 w-[25%]">
+          <h1 className='text-3xl font-bold pt-10 px-5 text-center'>Welcome to your Dashboard</h1>
+          <div className="user-info flex flex-col gap-2 mt-5 md:w-[25%] w-80">
 
             <form onSubmit={handleSubmit} className="user-info flex flex-col gap-2 mt-5 w-[95%]">
               <label className='text-neutral-400' htmlFor="username">Username:</label>

@@ -5,7 +5,7 @@ const Footer = () => {
         <div>
 
             <div className='box flex justify-between px-10 py-15 bg-black text-white gap-2 '>
-                <div className='block1 flex flex-col gap-4 '>
+                <div className='block1  flex flex-col gap-4 '>
                     <div>
                         <h1 className='text-4xl '>CarryOn</h1>
                         <p>Empowering creators and supporters alike.</p>
@@ -16,7 +16,7 @@ const Footer = () => {
                         <p className='text-sm'>© 2025 Adil Farooq. All rights reserved.</p>
                     </div>
                 </div>
-                <div className='block1 flex flex-col '>
+                <div className='block1 hidden md:flex md:flex-col'>
                     <ul>
                         <li>Site Map</li>
                         <li>About</li>
@@ -25,7 +25,7 @@ const Footer = () => {
                         <li>Partners</li>
                     </ul>
                 </div>
-                <div className='block1 flex flex-col '>
+                <div className='block1 hidden md:flex md:flex-col '>
                     <ul>
                         <li>Join Us</li>
                         <li>Carrers</li>
@@ -33,7 +33,7 @@ const Footer = () => {
                         <li>Sponsorship</li>
                     </ul>
                 </div>
-                <div className='block1 flex flex-col '>
+                <div className='block1 hidden md:flex md:flex-col '>
                     <ul>
                         <li>Contact Us</li>
                         <li>support@carryon</li>

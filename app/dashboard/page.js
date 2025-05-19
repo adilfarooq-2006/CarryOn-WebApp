@@ -7,3 +7,8 @@ const page = () => {
 }
 
 export default page
+
+
+export const metadata = {
+    title: "CarryOn - Dashboard",
+  }

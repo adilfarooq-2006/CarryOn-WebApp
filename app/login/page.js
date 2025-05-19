@@ -24,8 +24,8 @@ const Login = () => {
       <div className='flex flex-col justify-center items-center py-10  container mx-auto'>
         <h1 className='text-3xl font-medium '>Login with your credentials</h1>
         <div className=' flex flex-col justify-center items-center gap-2 my-10 text-black'>
-          <input className='bg-neutral-700 text-white w-full  p-2 rounded-lg' type="text" placeholder='Enter your Email' />
-          <div className='flex gap-2'>
+          <input className='bg-neutral-700 text-white w-full p-2 rounded-lg' type="text" placeholder='Enter your Email' />
+          <div className='flex md:flex-row flex-col gap-2'>
             <input className='bg-neutral-700 text-white  p-2 rounded-lg' type="text" placeholder='Enter your username' />
             <input className='bg-neutral-700 text-white  p-2 rounded-lg' type="text" placeholder='Enter your password' />
           </div>
